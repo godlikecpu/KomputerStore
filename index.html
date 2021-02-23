@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komputer Store</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <h1 class="header font">Komputer Store</h1>
+  <body class="body">
+    <div class="windows">
+      <div id="bankWindow" class="bank window lightshadow">
+        <h2 class="font">Bank</h2>
+        <span id="bankBalance" class="font"></span>
+        <br />
+        <span id="loanBalance" class="font"></span>
+        <br />
+        <br />
+        <button id="loanBtn" class="btn shadow">Get a loan</button>
+        <br />
+        <button id="repayLoanBtn" class="btn btnhide shadow">Repay loan</button>
+      </div>
+      <div class="work window lightshadow">
+        <h2 class="font">Work</h2>
+        <span id="workBalance" class="font"></span>
+        <br />
+        <span class="font">Pay: 100 DKK</span>
+        <br />
+        <br />
+        <button id="workBtn" class="btn shadow">Go to work</button>
+        <br />
+        <button id="bankPayBtn" class="btn btnhide shadow">Bank money</button>
+      </div>
+      <div class="laptops window lightshadow">
+        <h2 class="font">Laptops</h2>
+        <select id="laptopSelect"></select>
+        <div id="shortSpecs" class="font"></div>
+      </div>
+    </div>
+    <div class="laptop lightshadow">
+      <div class="imageWrapper">
+        <img id="laptopImg" width="250" height="250" />
+      </div>
+      <div id="longSpecs" class="font specsWrapper"></div>
+      <button id="buyBtn" class="btn shadow">Buy now</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
